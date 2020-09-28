@@ -2,7 +2,7 @@
     "name": "vscode-sil",
     "displayName": "VSCode SIL",
     "description": "Unofficial language support for the Sonolus Intermediate Language",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "jasmaa",
     "icon": "docs/sil.png",
     "homepage": "https://github.com/jasmaa/vscode-sil/blob/master/README.md",

@@ -6,6 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.0.3] - 2020-09-28
+- Add license
+
 ## [0.0.2] - 2020-09-28
 - Add badges and update description
 
