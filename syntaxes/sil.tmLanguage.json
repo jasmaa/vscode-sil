@@ -1,0 +1,84 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Sonolus Intermediate Language",
+	"patterns": [
+		{
+			"include": "#values"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#aliases"
+		},
+		{
+			"include": "#callbacks"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"functions": {
+			"name": "meta.function.sil",
+			"begin": "(\\w+)\\(",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.control"
+				}
+			},
+			"end": "\\)",
+			"patterns": [
+				{
+					"include": "#functions"
+				},
+				{
+					"include": "#identifiers"
+				},
+				{
+					"include": "#values"
+				},
+				{
+					"include": "#comments"
+				}
+			]
+		},
+		"identifiers": {
+			"name": "variable.parameter.sil",
+			"match": "\\*?[A-Za-z]\\w*"
+		},
+		"values": {
+			"name": "constant.numeric.sil",
+			"match": "-?\\d+(\\.\\d+)?"
+		},
+		"aliases": {
+			"name": "meta.alias.sil",
+			"match": "^\\s*(\\*?[A-Za-z]\\w*):",
+			"captures": {
+				"1": {
+					"name": "variable.parameter.sil"
+				}
+			}
+		},
+		"callbacks": {
+			"name": "meta.callbacks.sil",
+			"match": "^\\s*(#\\d+)\\.(\\w*)(@\\d+)?:",
+			"captures": {
+				"1": {
+					"name": "entity.name.tag.sil"
+				},
+				"2": {
+					"name": "entity.name.function.sil"
+				},
+				"3": {
+					"name": "entity.name.type.sil"
+				}
+			}
+		},
+		"comments": {
+			"name": "comment.line.double-slash",
+			"match": "//.*"
+		}
+	},
+	"scopeName": "source.sil"
+}

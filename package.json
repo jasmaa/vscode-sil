@@ -1,0 +1,31 @@
+{
+    "name": "vscode-sil",
+    "displayName": "VSCode SIL",
+    "description": "Language support for the Sonolus Intermediate Language",
+    "version": "0.0.1",
+    "publisher": "jasmaa",
+    "homepage": "https://github.com/jasmaa/vscode-sil/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jasmaa/vscode-sil.git"
+    },
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sil",
+            "aliases": ["Sonolus Intermediate Language", "sil"],
+            "extensions": [".sil"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sil",
+            "scopeName": "source.sil",
+            "path": "./syntaxes/sil.tmLanguage.json"
+        }]
+    }
+}
