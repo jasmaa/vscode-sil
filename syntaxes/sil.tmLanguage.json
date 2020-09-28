@@ -9,10 +9,10 @@
 			"include": "#functions"
 		},
 		{
-			"include": "#aliases"
+			"include": "#callbacks"
 		},
 		{
-			"include": "#callbacks"
+			"include": "#identifiers"
 		},
 		{
 			"include": "#comments"
@@ -50,15 +50,6 @@
 		"values": {
 			"name": "constant.numeric.sil",
 			"match": "-?\\d+(\\.\\d+)?"
-		},
-		"aliases": {
-			"name": "meta.alias.sil",
-			"match": "^\\s*(\\*?[A-Za-z]\\w*):",
-			"captures": {
-				"1": {
-					"name": "variable.parameter.sil"
-				}
-			}
 		},
 		"callbacks": {
 			"name": "meta.callbacks.sil",
