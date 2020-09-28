@@ -1,6 +1,6 @@
 # VSCode SIL
 
-VSCode extension Syntax for the
+VSCode language extension for the
 [Sonolus Intermediate Language](https://github.com/NonSpicyBurrito/sonolus-wiki/wiki/Sonolus-Intermediate-Language)
 
 ![Syntax-highlighting example](docs/code.png)
